@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ülük & Adıgüzel Sebze Ticareti - İzmir Menderes'te premium kalite patates ve soğan tedariki yapan profesyonel girişimciler">
+    <meta name="keywords" content="patates, soğan, İzmir, Menderes, Çamönü, premium sebze, toptan sebze, kaliteli patates">
+    <title>Ülük & Adıgüzel Sebze Ticareti - Premium Kalite Patates & Soğan</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Hero Section - Premium Professional */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: white;
+            padding: 80px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff10"><polygon points="0,0 1000,80 1000,100 0,100"/></svg>') repeat-x;
+            background-size: 1000px 100px;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .company-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+        
+        .hero p {
+            font-size: 1.125rem;
+            margin-bottom: 40px;
+            opacity: 0.8;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Premium Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        /* About Section - Executive Style */
+        .about {
+            padding: 120px 0;
+            background: #fafafa;
+        }
+        
+        .about-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .section-badge {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 25px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .about-image::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .about-text {
+            space-y: 40px;
+        }
+        
+        .founder-info {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .founder-names {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        
+        .founder-title {
+            color: #3b82f6;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        
+        .founder-description {
+            color: #64748b;
+            line-height: 1.7;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 32px 24px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border-top: 3px solid #3b82f6;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #3b82f6;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        /* Products Section - Premium Showcase */
+        .products {
+            padding: 120px 0;
+            background: white;
+        }
+        
+        .products-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .product-content {
+            padding: 40px 32px;
+        }
+        
+        .product-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 12px;
+        }
+        
+        .product-description {
+            color: #64748b;
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+        
+        .product-features li {
+            color: #64748b;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .product-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            width: 20px;
+            height: 20px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+        
+        .product-cta {
+            text-align: center;
+        }
+        
+        .product-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        
+        .product-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        /* Contact Section - Executive Contact */
+        .contact {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .contact-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .contact-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            padding: 60px 48px;
+        }
+        
+        .contact-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .contact-subtitle {
+            opacity: 0.8;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-details {
+            space-y: 32px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .contact-details-text h4 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .contact-phone {
+            color: #60a5fa;
+            font-size: 1.375rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-phone:hover {
+            color: #93c5fd;
+        }
+        
+        .contact-address {
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+        
+        .hour-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 16px;
+            border-radius: 12px;
+        }
+        
+        .hour-day {
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .hour-time {
+            opacity: 0.8;
+            font-size: 0.875rem;
+        }
+        
+        /* Footer - Professional */
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        
+        .footer-tagline {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 32px;
+        }
+        
+        .footer-contact {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 32px;
+            border-radius: 20px;
+            margin-bottom: 32px;
+        }
+        
+        .footer-phone {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #60a5fa;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        
+        .footer-location {
+            opacity: 0.7;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 32px;
+            opacity: 0.6;
+        }
+        
+        /* Floating Contact Button */
+        .floating-contact {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 1000;
+        }
+        
+        .floating-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 20px 32px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .floating-btn:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(16, 185, 129, 0.4);
+        }
+        
+        .floating-icon {
+            width: 24px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .about-content,
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero {
+                padding: 60px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .about,
+            .products,
+            .contact {
+                padding: 80px 0;
+            }
+            
+            .founder-info,
+            .product-content {
+                padding: 32px 24px;
+            }
+            
+            .contact-info {
+                padding: 40px 32px;
+            }
+            
+            .floating-btn {
+                padding: 16px 24px;
+                font-size: 1rem;
+            }
+            
+            .floating-contact {
+                bottom: 24px;
+                right: 24px;
+            }
+            
+            .stats-grid,
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                padding: 14px 24px;
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="company-badge">Premium Sebze Tedarikçisi</div>
+                <h1>Ülük & Adıgüzel Sebze Ticareti</h1>
+                <div class="hero-subtitle">Kalite • Güven • Profesyonellik</div>
+                <p>İzmir Menderes'te premium kalite patates ve soğan tedariki yapan, genç ve dinamik girişimcilerimizle tanışın. Taze ürünler, güvenilir hizmet.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <span>📋</span> Ürünlerimizi İnceleyin
+                    </a>
+                    <a href="tel:+905349860604" class="btn btn-secondary">
+                        <span>📞</span> Hemen Arayın
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-header">
+                <div class="section-badge">Kurumsal Hikayemiz</div>
+                <h2 class="section-title">Genç Girişimciler, Premium Kalite</h2>
+                <p class="section-subtitle">
+                    Hebun Ülük ve Abdurrahman Adıgüzel olarak genç yaşlarımızda ticarete atılarak, 
+                    İzmir Menderes Çamönü bölgesinde premium kalite sebze ticareti yapıyoruz.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="hebun.jpg"
+                </div>
+                <div class="about-text">
+                    <div class="founder-info">
+                        <div class="founder-names">Hebun Ülük & Abdurrahman Adıgüzel</div>
+                        <div class="founder-title">Kurucu Ortaklar</div>
+                        <p class="founder-description">
+                            Genç yaşlarımızda ticarete atılma cesaretini göstererek, kalite ve güvenilirlik 
+                            prensiplerimizden ödün vermeden büyüyen bir işletme kurduk. Müşteri memnuniyeti 
+                            ve premium hizmet anlayışımızla sektörde fark yaratıyoruz.
+                        </p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Mutlu Müşteri</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Hizmet Desteği</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">A+</div>
+                            <div class="stat-label">Kalite Standardı</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2024</div>
+                            <div class="stat-label">Güvenilir Partner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="products-header">
+                <div class="section-badge">Premium Ürünlerimiz</div>
+                <h2 class="section-title">Kaliteli Patates & Soğan</h2>
+                <p class="section-subtitle">
+                    Menderes'in verimli topraklarından özenle seçilmiş, A+ kalite patates ve soğan çeşitlerimiz
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-overlay">Premium Kalite</div>
+                        <img src="https://placeholder-image-service.onrender.com/image/500x320?prompt=Premium quality fresh potatoes arranged elegantly in wooden crates with professional lighting in modern Turkish agricultural facility with clean organized display&id=1d0a70c1-15b3-44d1-bf07-40ffa6069e01&customer_id=cus_SXvsq9vWEYAzW6" 
+                             alt="Premium kaliteli taze patatesler ahşap kasalarda profesyonel aydınlatma ile modern Türk tarım tesisinde temiz düzenli sergileme">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Premium Patates</h3>
+                        <p class="product-description">
+                            Menderes'in bereketli topraklarından hasat edilen, A+ kalite standartlarında 
+                            taze patatesler. Hem toptan hem de perakende satış mevcuttur.
+                        </p>
+                        <ul class="product-features">
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Organik ve doğal üretim
+                            </li>
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Günlük taze hasat
+                            </li>
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Premium kalite garantisi
+                            </li>
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Toptan ve perakende satış
+                            </li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="tel:+905349860604" class="product-btn">
+                                <span>📞</span> Fiyat Bilgisi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-overlay">Premium Kalite</div>
+                        <img src="https://placeholder-image-service.onrender.com/image/500x320?prompt=Premium white and red onions professionally displayed in modern agricultural warehouse with excellent lighting and organized presentation showing quality Turkish produce&id=1d0a70c1-15b3-44d1-bf07-40ffa6069e01&customer_id=cus_SXvsq9vWEYAzW6" 
+                             alt="Premium beyaz ve kırmızı soğanlar modern tarım deposunda mükemmel aydınlatma ve düzenli sunum ile kaliteli Türk ürünü gösterisi">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Premium Soğan</h3>
+                        <p class="product-description">
+                            Beyaz ve kırmızı soğan çeşitlerinde, uzun raf ömrü ve yüksek kalite standardları. 
+                            Çeşitli boyut seçenekleri ile ihtiyacınıza uygun çözümler.
+                        </p>
+                        <ul class="product-features">
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Beyaz ve kırmızı çeşitler
+                            </li>
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Uzun dayanıklılık süresi
+                            </li>
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Çeşitli boyut seçenekleri
+                            </li>
+                            <li>
+                                <div class="feature-icon">✓</div>
+                                Rekabetçi fiyat avantajı
+                            </li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="tel:+905349860604" class="product-btn">
+                                <span>📞</span> Fiyat Bilgisi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <div class="section-badge">İletişim</div>
+                <h2 class="section-title">Bizimle İletişime Geçin</h2>
+                <p class="section-subtitle">
+                    Premium kalite ürünlerimiz ve profesyonel hizmetimiz için hemen arayın
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-title">İletişim Bilgileri</h3>
+                    <p class="contact-subtitle">Size en iyi hizmeti sunmak için buradayız</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details-text">
+                                <h4>Telefon Numaramız</h4>
+                                <a href="tel:+905349860604" class="contact-phone">+90 534 986 06 04</a>
+                                <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 4px;">
+                                    Hebun Ülük & Abdurrahman Adıgüzel
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details-text">
+                                <h4>Adresimiz</h4>
+                                <div class="contact-address">
+                                    <strong>İzmir Menderes Çamönü</strong><br>
+                                    Taze sebze teslimatı ve toptan satış merkezi
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-details-text">
+                                <h4>Çalışma Saatlerimiz</h4>
+                                <div class="hours-grid">
+                                    <div class="hour-item">
+                                        <div class="hour-day">Pazartesi - Cumartesi</div>
+                                        <div class="hour-time">06:00 - 18:00</div>
+                                    </div>
+                                    <div class="hour-item">
+                                        <div class="hour-day">Pazar</div>
+                                        <div class="hour-time">07:00 - 15:00</div>
+                                    </div>
+                                </div>
+                                <p style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 12px;">
+                                    Acil durumlar için 7/24 arayabilirsiniz
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Ülük & Adıgüzel Sebze Ticareti</div>
+                <div class="footer-tagline">Premium Kalite • Güvenilir Hizmet • Profesyonel Yaklaşım</div>
+                
+                <div class="footer-contact">
+                    <a href="tel:+905349860604" class="footer-phone">📞 +90 534 986 06 04</a>
+                    <div class="footer-location">Hebun Ülük & Abdurrahman Adıgüzel<br>İzmir Menderes Çamönü</div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2024 Ülük & Adıgüzel Sebze Ticareti. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <a href="tel:+905349860604" class="floating-btn">
+            <div class="floating-icon">📞</div>
+            <span>Hemen Ara</span>
+        </a>
+    </div>
+
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Animate elements on scroll
+        document.querySelectorAll('.product-card, .stat-card, .founder-info').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(el);
+        });
+
+        // Enhanced button hover effects
+        document.querySelectorAll('.btn, .product-btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px) scale(1.02)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Product card enhanced interactions
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-12px)';
+                this.style.boxShadow = '0 35px 90px rgba(0, 0, 0, 0.2)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 20px 60px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // Floating button pulse effect
+        setInterval(() => {
+            const floatingBtn = document.querySelector('.floating-btn');
+            if (floatingBtn) {
+                floatingBtn.style.transform = 'translateY(-4px) scale(1.08)';
+                setTimeout(() => {
+                    floatingBtn.style.transform = 'translateY(-4px) scale(1.05)';
+                }, 200);
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
